@@ -1,0 +1,158 @@
+:root{
+    --brancoPrincipal: #FFFFFF;
+    --cinzaSecundario: #C0C0C0;
+    --botaoAzul: #167BF7;
+    --corDeFundo:#00030C;
+    --fontPrincipal:"Inter";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color: var(--corDeFundo); 
+   color: var(--brancoPrincipal);
+   font-family: var(--fontPrincipal);
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal{
+    background-image: url(../image/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__caixa{
+    margin: 0 6em;
+    width: 588px;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color: var(--botaoAzul);
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--brancoPrincipal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao--secundario{
+    background-color: transparent;
+    border: 2px solid var(--brancoPrincipal);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinzaSecundario);
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--brancoPrincipal);
+    margin-bottom: 0.2em;
+}
+
+.descricao__texto{
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--cinzaSecundario);
+}
+
+.secundario__batao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+    
+}
+
+.container__dispositivo{
+    text-align: center;
+    margin-bottom: 8em;
+}
+
+.dispositivo__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em 0;
+}
+
+.dispositivo__lista img, h3{
+    padding-left: 150px;
+}
+
+.dispositivo__titulo{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.lista__item{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.footer__conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagem__logo_alura{
+    width: 115px;
+    height: 34.28px;
+}
+
+.footer__informacao{
+    text-align: center;
+}
+
+.lista__link a{
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--brancoPrincipal);
+    text-decoration: none;
+    padding: 8px;
+}
+
+.footer__info, .footer__copy {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cinzaSecundario);
+    margin-bottom: 1em;
+    width: 1200px;
+}
